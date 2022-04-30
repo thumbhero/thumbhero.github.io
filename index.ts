@@ -24,3 +24,4 @@ function initMap(): void {
     }
   }
   window.initMap = initMap;
+  export {};
