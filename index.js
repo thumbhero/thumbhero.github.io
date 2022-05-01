@@ -27,7 +27,7 @@ function initMap() {
     });
   
     // Add a marker clusterer to manage the markers.
-    new markerClusterer.MarkerClusterer({ markers, map });
+    const markerCluster = new markerClusterer.MarkerClusterer({ map, markers });
   }
   
 const locations = [
