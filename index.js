@@ -32,7 +32,7 @@ function initMap() {
     new MarkerClusterer({ markers, map });
   }
   
-  const locations = [
+const locations = [
     { lat: -31.56391, lng: 147.154312 },
     { lat: -33.718234, lng: 150.363181 },
     { lat: -33.727111, lng: 150.371124 },
@@ -58,5 +58,5 @@ function initMap() {
     { lat: -43.999792, lng: 170.463352 },
   ];
   
-  window.initMap = initMap;
-  export {};
+window.initMap = initMap;
+export {};
