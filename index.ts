@@ -3,7 +3,7 @@
  * Copyright 2019 Google LLC. All Rights Reserved.
  * SPDX-License-Identifier: Apache-2.0
  */
- import { MarkerClusterer } from "@googlemaps/markerclusterer";
+ // import { MarkerClusterer } from "@googlemaps/markerclusterer";
 
  function initMap(): void {
    const map = new google.maps.Map(
@@ -41,7 +41,7 @@
    });
  
    // Add a marker clusterer to manage the markers.
-   new MarkerClusterer({ markers, map });
+   new markerClusterer.MarkerClusterer({ markers, map });
  }
  
  const locations = [
