@@ -59,3 +59,4 @@ function initMap() {
   ];
   
   window.initMap = initMap;
+  export {};
