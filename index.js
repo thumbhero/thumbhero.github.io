@@ -1,3 +1,5 @@
+import { MarkerClusterer } from "@googlemaps/markerclusterer";
+
 function initMap() {
     const map = new google.maps.Map(document.getElementById("map"), {
       zoom: 3,
@@ -27,7 +29,7 @@ function initMap() {
     });
   
     // Add a marker clusterer to manage the markers.
-    const markerCluster = new markerCluster.MarkerClusterer({ map, markers });
+    new MarkerClusterer({ map, markers });
   }
   
 const locations = [
