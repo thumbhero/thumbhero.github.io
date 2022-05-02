@@ -17,6 +17,7 @@ function initMap() {
       const marker = new google.maps.Marker({
         position,
         label,
+        map: map,
       });
   
       // markers can only be keyboard focusable when they have click listeners
@@ -29,7 +30,7 @@ function initMap() {
     });
   
     // Add a marker clusterer to manage the markers.
-    new MarkerClusterer({ map, markers });
+    const markerCluster = new MarkerClusterer({ map, markers });
   }
   
 const locations = [
